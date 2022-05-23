@@ -19,13 +19,8 @@ function Api2 () {
     fetch(api2) //URL
     .then(response => response.json()) //Formato sepador por funcion de flecha =>
     .then(data =>{
-        //para pintar una imagen de una appi
-        let poke = data.sprites.back_default //Url de la imagen
-        let img = document.getElementById ("miimagen").src = poke //atributos value, innerhtml, src, readonly, required
-        //Si es un objeto acceso con puntos...
 
-
-        //alert((JSON.stringify(data)))//la data es la promesa que les cumplio el API    
+    alert((JSON.stringify(data)))//la data es la promesa que les cumplio el API    
 
     } )
 }
@@ -38,14 +33,8 @@ function Api3 () {
     fetch(api3) //URL
     .then(response => response.json()) //Formato sepador por funcion de flecha =>
     .then(data =>{
-        console.log (data)
-       //alert((JSON.stringify(data)))//la data es la promesa que les cumplio el API
-
-       console.log (data[13])
-       //Si es un array accedo con [#indice]
-       
-        
-   //});
+    
+    alert((JSON.stringify(data)))//la data es la promesa que les cumplio el API
         
     })
 }
